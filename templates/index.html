@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<img class="banner_image" src="static/pexels-pietro-jeng-65128.jpg" width="100%" >
+<h3>Photo by Pietro Jeng from Pexels</h3>
+<h1> Rate your Favorite Movies Here!</h1>
+
+
+<form method="post" action="/">
+{% for i in range(3) %}
+    <fieldset class="flex two">
+    <input type = "text" placeholder="movie title" name="movie_title">
+    <input type = "text" placeholder="rate 0.0-5.5" name="movie_rating">
+    </fieldset>
+{% endfor %}
+
+<h2>Choose your Recommendation's Model!</h2>
+    <input type="submit" value="Kmeans" name="action1"/>
+    <input type="submit" value="NMF" name="action2" />
+    <input type="submit" value="User Cosine Similarity" name="action3" />
+    <input type="submit" value="Random" name="action4" />
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+
+
+<fieldset class="flex two">
+    
+    <img src="static/pexels-taryn-elliott-6259442.jpg" width="100">  
+     
+    <div class = "row">
+        <h1> Recommendation from Kmeans Clustering:</h1>       
+            {% for title,id, imdbid in recs %}
+                <li><a href="{{ url_for('movie_info', movieid=id,imdbid=imdbid)}}">{{ title }}</a></li>
+                
+            {% endfor %}
+        
+    </div>
+    <h3> Photo by Taryn Elliott from Pexels </h3>  
+</fieldset>  
+    
+
+
+
+
+ 
+<p>
+
+
+{% endblock %}
+

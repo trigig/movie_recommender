@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies' Time</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename = 'mylogo.png')}}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+   
+</head>
+
+<div class="header">
+    <div class="header-right">
+      <a class="active" href="/"><img src="/static/mylogo.png" width="80" height="80"></a>
+      
+    </div>
+  </div>
+
+<body>
+    
+    <div class="container">
+    {% block content %}
+    <!-- define pages main content here in other template-->
+    {% endblock %}
+    
+    </div>
+    <footer>
+        <hr>
+        <h3>Spiced Academy | Movie Recommendation Project | Alisa  </h3>
+
+    </footer>
+
+</body>
+</html>    

@@ -1,0 +1,58 @@
+/* tweek rule!
+General CSS Rules
+selector {
+    property: value;
+    another-property: value
+}
+*/
+
+* {
+    background-color:black;
+    font-family: 'monospace';
+}
+
+.header {
+    overflow: hidden;
+       
+}
+  
+h1 {
+    color: white;
+        
+}
+
+h2 {
+    color:white
+}
+
+h3 {
+    color:white;
+    font-size: small;
+}
+
+li {
+    color: salmon;
+    font-size: 1em;
+
+
+}
+
+#rate {
+    color: #71D8C2;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myCoolButton {
+    background:salmon;
+}
+
+
+
+

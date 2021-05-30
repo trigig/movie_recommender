@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<img src="https://d19o3rvvi2wlie.cloudfront.net/{{movieid}}.jpg" width="25%" >
+
+<a href="{{url_for('link_to_imdb', id = imdbid)}}"><h2>Click Here for more Information about the movie from IMDb!</h2></a>
+
+{% endblock %}
+

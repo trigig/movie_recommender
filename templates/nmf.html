@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<fieldset class="flex two">
+    
+    <img src="static/pexels-cottonbro-3945313.jpg" width="100">  
+     
+    <div class = "row">
+        <h1> Recommendation from NMF:</h1>       
+            {% for title,id,imdbid in nmf_recs %}
+                <li><a href="{{ url_for('movie_info', movieid=id,imdbid=imdbid)}}">{{ title }}</a></li>
+            {% endfor %}            
+    </div>
+    <h3> Photo by cottonbro from Pexels </h3>  
+</fieldset>  
+    
+
+
+ 
+<p>
+
+
+{% endblock %}

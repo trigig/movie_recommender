@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<fieldset class="flex two">
+    
+    <img src="static/pexels-bruno-massao-2335046.jpg" width="100">  
+     
+    <div class = "row">
+        <h2>Recommendation from User Cosine Similarity</h2>
+            {% for title,id,imdbid in cosim_recs %}
+                <li><a href="{{ url_for('movie_info', movieid=id, imdbid=imdbid)}}">{{ title }}</a></li>
+                
+            {% endfor %}           
+    </div>
+    <h3> Photo by Bruno Massao from Pexels</h3>  
+</fieldset>  
+    
+
+ 
+<p>
+<a href="/"> Back to the main page</a>
+
+{% endblock %}
