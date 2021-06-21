@@ -10,10 +10,9 @@ https://grouplens.org/datasets/movielens/
 
 ### Model Information
 #### Kmean Clustering
-Use sklearn Kmean with 348 clusters.
+Use sklearn Kmean.
 #### Non-begative Matrix Factorization
-Use sklearn NMF with 50 Components, max_iter = 500.
-#### User Cosine Similarity
+Use sklearn NMF.
 Use sklearn cosine similarity.
 #### Random
 Use numpy sample method.
