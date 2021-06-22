@@ -27,5 +27,7 @@ For this first project I use python Flask framework with HTML and CSS.
 
 ### Deployment
 Deployment on Heroku: https://trigig.herokuapp.com/
-Please be noted that it can take up to 30 seconds to laod the website on herokuapp
+Please be noted that it can take up to 30 seconds to load the website on herokuapp
+
+![img](movierec.png)
 
